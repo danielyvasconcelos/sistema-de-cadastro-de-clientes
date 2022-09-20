@@ -32,16 +32,15 @@ if( isset($_POST['submit'])){
      include_once('configF.php');
      $nome= $_POST['nome'];
      $email= $_POST['email'];
-     $usuario= $_POST['usuario'];
      $senha= $_POST['senha'];
      $data_nasc= $_POST['data_nascimento'];
      $cidade= $_POST['cidade'];
      $estado= $_POST['estado'];
      $endereco= $_POST['endereco'];
 
-     $result= mysqli_query($conexao, "INSERT INTO funcionarios(nome,email, usuario, senha, data_nasc,cidade,estado,endereco)
-     VALUES('$nome','$email', '$usuario','$senha','$data_nasc', '$cidade','$estado','$endereco')");
+     $result= mysqli_query($conexao, "INSERT INTO funcionarios(nome,email, senha, data_nasc,cidade,estado,endereco)
+     VALUES('$nome','$email','$senha','$data_nasc', '$cidade','$estado','$endereco')");
 
-
+header('location: formularioFuncionario.php');
 }
 ?>

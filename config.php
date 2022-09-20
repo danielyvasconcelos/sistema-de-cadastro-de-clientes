@@ -16,8 +16,6 @@ $conexao = new mysqli ($dbHost, $dbUsername, $dbPassword, $dbName);
 ?>
 
 
-
-
 <?php 
 if( isset($_POST['submit'])){
      //print_r($_['nome']);
@@ -45,8 +43,9 @@ if( isset($_POST['submit'])){
      $result= mysqli_query($conexao, "INSERT INTO clientes(nome, email,telefone, data_nasc,cidade,estado,endereco)
      VALUES('$nome','$email','$telefone','$data_nasc', '$cidade','$estado','$endereco')");
 
-
+    header('location: formularioFuncionario.php');
 }
+
 ?>
 
 

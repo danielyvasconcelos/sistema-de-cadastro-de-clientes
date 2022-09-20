@@ -16,15 +16,14 @@ if( isset($_POST['submit'])){
      include_once('configF.php');
      $nome= $_POST['nome'];
      $email= $_POST['email'];
-     $usuario= $_POST['usuario'];
      $senha= $_POST['senha'];
      $data_nasc= $_POST['data_nascimento'];
      $cidade= $_POST['cidade'];
      $estado= $_POST['estado'];
      $endereco= $_POST['endereco'];
 
-     $result= mysqli_query($conexao, "INSERT INTO funcionarios(nome,email, usuario, senha, data_nasc,cidade,estado,endereco)
-     VALUES('$nome','$email', '$usuario','$senha','$data_nasc', '$cidade','$estado','$endereco')");
+     $result= mysqli_query($conexao, "INSERT INTO funcionarios(nome,email, senha, data_nasc,cidade,estado,endereco)
+     VALUES('$nome','$email','$senha','$data_nasc', '$cidade','$estado','$endereco')");
      
 }
 ?>
@@ -46,7 +45,7 @@ if( isset($_POST['submit'])){
     </header>
 
     <div class="box">
-        <form action="formularioFuncionario.php" method="POST" >
+        <form action="configF.php" method="POST" >
                 <legend><b>Cadastro de funcionarios</b> </legend>
                 <br>
                 <div class="inputBox">
@@ -57,11 +56,6 @@ if( isset($_POST['submit'])){
                 <div class="inputBox">
                     <input type="text" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Email</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="usuario" id="usuario" class="inputUser" required>
-                    <label for="usuario" class="labelInput">Usuário</label>
                 </div>
                 <br><br>
                 <div class="inputBox">

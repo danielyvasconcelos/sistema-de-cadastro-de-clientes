@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,7 @@
             </div>
             
             <form action="testLogin.php" method="POST">
-                <input type="text" name="usuario" placeholder="Usuário" autofocus required
+                <input type="text" name="email" placeholder="Email" autofocus required
                 id="inputUsuarioLogin">
                 <input type="password" name="senha" placeholder="Senha" required
                 id="inputSenhaLogin">
