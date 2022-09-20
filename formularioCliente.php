@@ -34,15 +34,20 @@ if( isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
-    <title>Formulário | GN</title>
+    <link rel="icon" type="image/png" href="Imagens/logozin.png" />
+    <link href="CSS/clienteStyle.css" rel="stylesheet">
+    <title>Cadastro de Clientes</title>
     
 </head>
 <body>
+
+    <header class="cabecalho">
+        <img class="area-logo" src="Imagens/logo.png">
+    </header>
+    
     <div class="box">
         <form action="formulario.php" method="POST" >
-            <fieldset>
-                <legend><b>Fórmulário de Clientes</b> </legend>
+                <legend><b>Cadastro de Clientes</b> </legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
@@ -55,7 +60,7 @@ if( isset($_POST['submit'])){
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="telefone" name="telefone" id="telefone" class="inputUser" required>
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <br><br>
@@ -77,8 +82,7 @@ if( isset($_POST['submit'])){
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
-                <input type="submit" name="submit" id="submit">
-            </fieldset>
+                <input type="submit" name="submit" id="submit" value="Cadastrar">
         </form>
     </div>
 </body>

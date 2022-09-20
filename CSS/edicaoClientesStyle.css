@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080808;
+  }
+  
+  .cabecalho {
+    background-color: #5d5c5c;
+    padding: 4rem 0;
+  }
+  
+  .area-logo {
+    display: flex;
+    position: absolute;
+    width: 325px;
+    height: 100px;
+    left: 10px;
+    top: 20px;
+  }
+  
+  .box {
+    color: #FFBC42;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5D5C5C;
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    font-weight: bold;
+  }
+  
+  legend {
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .inputBox {
+    position: relative;
+  }
+  
+  .inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  
+  .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .inputUser:focus ~ .labelInput,
+  .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+  }
+  
+  #data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  #submit {
+    background-color: #080808;
+    width: 70px;
+    border: none;
+    padding: 15px;
+    color: #FFBC42;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+  }

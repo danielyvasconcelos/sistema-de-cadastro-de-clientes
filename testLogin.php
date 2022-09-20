@@ -26,7 +26,7 @@ if (isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha
         //print_r('não existe');
         unset($_SESSION['usuario']);
         unset($_SESSION['senha']);
-        header('Location : login.php');
+        header('Location : index.php');
     }else{
         //print_r('existe');
         $_SESSION['usuario']=$usuario;
@@ -36,7 +36,7 @@ if (isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha
 } else {
     // die("sextou 2");
     //nao acessa
-    header('Location : login.php');
+    header('Location : index.php');
 }
 
 
